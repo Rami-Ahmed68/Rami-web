@@ -8,55 +8,51 @@ import WorksViewvue from "../views/WorksView.vue";
 import SkillsViewvue from "../views/SkillsView.vue";
 import NotFound from "../views/NotFound.vue";
 
-// Vue.use(VueRouter);
-
-const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/upaccount',
-    name: 'upaccount',
-    component : UpdateAccountViewvue
-  },
-  {
-    path : "/login",
-    name : "login",
-    component : LoginViewvue,
-  },
-  {
-    path : "/dash",
-    name : "dash",
-    component : DashBordViewvue
-  },
-  {
-    path : "/work/:id",
-    name : "work",
-    component : ShowWorkView
-  },
-  {
-    path : "/works",
-    name : "works",
-    component : WorksViewvue
-  },
-  {
-    path : "/skills",
-    name : "skills",
-    component : SkillsViewvue
-  },
-  {
-    path : "/:pathMatch(.*)*",
-    name : "NotFound",
-    component : NotFound
-  }
-]
-
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes,
-  mode : "history"
+  mode : "history",
+  routes : [
+    {
+      path: '/',
+      name: 'home',
+      component: HomeView
+    },
+    {
+      path: '/upaccount',
+      name: 'upaccount',
+      component : UpdateAccountViewvue
+    },
+    {
+      path : "/login",
+      name : "login",
+      component : LoginViewvue,
+    },
+    {
+      path : "/dash",
+      name : "dash",
+      component : DashBordViewvue
+    },
+    {
+      path : "/work/:id",
+      name : "work",
+      component : ShowWorkView
+    },
+    {
+      path : "/works",
+      name : "works",
+      component : WorksViewvue
+    },
+    {
+      path : "/skills",
+      name : "skills",
+      component : SkillsViewvue
+    },
+    {
+      path : "/:pathMatch(.*)*",
+      name : "NotFound",
+      component : NotFound
+    }
+  ],
 })
 
 export default router
