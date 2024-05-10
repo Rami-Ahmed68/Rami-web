@@ -1,0 +1,202 @@
+.skills-darck {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .create-skill-cont {
+        width: 100%;
+        .create-skill {
+            margin: 20px 0px;
+            border-radius: 10px;
+            color: $font-light;
+            width: 30%;
+            padding: 10px 0px;
+            margin-left: 35%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition-duration: 0.5s;
+            @media (max-width:$phone) {
+                width: 40%;
+                margin-left: 30%;
+            }
+            svg {
+                margin: 0px 5px 0px -10px;
+            }
+        }
+    }
+
+    .create-skill:hover {
+        background-color: $message-darck;
+    }
+
+    @media (max-width : $phone) {
+            width: 90%;
+            .create-skill {
+                width: 50%;
+                margin-left: 25%;
+            }
+    }
+
+    .title {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $font-light;
+    }
+
+    .skill {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 10px;
+        position: relative;
+
+        .skills-options-cont {
+            position: absolute;
+            right: -10%;
+            top: -10%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .kebab {
+                color: $font-light;
+                font-size: $medium;
+                cursor: pointer;
+                transition-duration: 0.5s;
+                padding: 5px 10px;
+            }
+
+            #open {
+                position: absolute;
+                right: 25%;
+                top: 110%;
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                background-color: $body-darck;
+                border-radius: 10px;
+                transition-duration: 0.5s;
+                box-shadow: 0 0 10px $black;
+
+
+                li {
+                    width: 90%;
+                    height: 40%;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    color: $font-light;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition-duration: 0.5s;
+                    svg {
+                        transition-duration: 0.5s;
+                        color:$font-light;
+                        padding: 0px 5px;
+                    }
+                }
+
+                li:hover {
+                    color: $blue;
+                    background-color: $message-darck;
+                    svg {
+                        color: $blue;
+                    }
+                }
+            }
+
+            #close {
+                @extend #open;
+                height: 0px;
+                width: 0px;
+                overflow: hidden;
+            }
+        }
+
+        img {
+            width: 80%;
+            height: 80%;
+            user-select: none;
+        }
+
+        h2 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $font-light;
+        }
+    }
+}
+
+.skills-light {
+    @extend .skills-darck;
+    .create-skill-cont {
+        width: 100%;
+        .create-skill {
+            color: $font-darck;
+        }
+    }
+    .title {
+        color: $font-darck;
+    }
+
+    .create-skill {
+        color: $font-darck;
+    }
+
+    .create-skill:hover {
+        background-color: $message-light;
+    }
+
+    .skill {
+
+        .skills-options-cont {
+
+            .kebab {
+                color: $font-darck;
+            }
+
+            #open {
+                background-color: $body-light;
+                box-shadow: 0 0 10px $black;
+
+                li {
+                    color: $font-darck;
+                    svg {
+                        color:$font-darck;
+                    }
+                }
+
+                li:hover {
+                    background-color: $message-light;
+                }
+            }
+
+        }
+
+        h2 {
+            color: $font-darck;
+        }
+    }
+}

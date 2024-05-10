@@ -1,0 +1,140 @@
+
+.create-work-darck {
+    .work {
+        .options {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            right: 2%;
+            top: 2%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .options-icon {
+                color: $blue;
+                font-size: $x-large;
+                transition-duration: 0.5s;
+                cursor: pointer;
+                padding: 5px 15px;
+                border-radius: 50%;
+                z-index: 20;
+                @media (max-width : $phone) {
+                    margin-right: -10px;
+                }
+            }
+            
+            .options-icon:hover {
+                color: $font-light;
+                background-color: $blue;
+            }
+            
+            .optins-cont {
+                position: absolute;
+                right:30%;
+                top: 120%;
+                width: 100px;
+                height: 0px;
+                border-radius: 10px;
+                overflow: hidden;
+                background-color: $body-darck;
+                transition-duration: 0.5s;
+
+                li {
+                    width: 90%;
+                    height: 40px;
+                    margin: 7px 5%;
+                    padding: 10px 0px;
+                    border-radius: 5px;
+                    list-style-type: none;
+                    color: $font-light;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    transition-duration: 0.5s;
+                    cursor: pointer;
+
+                    svg {
+                        font-size: $medium;
+                        color: $font-light;
+                        transition-duration: 0.5s;
+                    }
+
+                }
+                
+                li:hover  {
+                    color: $blue;
+                    background-color: $message-darck;
+                    svg {
+                        color: $blue;
+                    }
+                }
+
+            }
+
+            #close {
+                width: 0px;
+            }
+
+            #open {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+
+.create-work-light {
+    .work {
+        .options {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            right: 2%;
+            top: 2%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .options-icon {
+                color: $blue;
+                font-size: $x-large;
+                transition-duration: 0.5s;
+                cursor: pointer;
+                padding: 5px 15px;
+                border-radius: 50%;
+                z-index: 20;
+            }
+
+            .options-icon:hover {
+                color: $font-light;
+                @media (min-width : $phone) {
+                    background-color: $blue;
+                }
+            }
+
+            .optins-cont {
+                background-color: $message-light;
+
+                li {
+                    color: $font-darck;
+                    svg {
+                        color: $font-darck;
+                    }
+
+                }
+                
+                li:hover  {
+                    background-color: $body-light;
+                    svg {
+                        color: $blue;
+                    }
+                }
+
+            }
+        }
+    }
+}

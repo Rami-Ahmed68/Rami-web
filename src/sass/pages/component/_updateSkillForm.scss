@@ -1,0 +1,177 @@
+.update-skill-form-darck {
+    width: 50%;
+    height: auto;
+    background-color: $body-darck;
+    box-shadow: 0 0 10px $black;
+    position: fixed;
+    z-index: 100;
+    top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    @media (max-width:$phone) {
+        width: 90%;
+    }
+
+    .header {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid;
+        border-color: transparent transparent $font-light transparent;
+        margin-bottom: 10px;
+
+        h1 {
+            color: $font-light;
+        }
+
+        svg {
+            position: absolute;
+            left: 5%;
+            font-size: $x-large;
+            color: $blue;
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+
+        svg:hover {
+            transform: rotate(360deg);
+        }
+
+        .loading {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 0%;
+            top: -1%;
+        }
+    }
+
+    label {
+        width: 98%;
+        height: 20px;
+        margin: 5px 0px;
+        color: $font-light;
+    }
+
+    input {
+        width: 98%;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        padding-left: 10px;
+        outline: none;
+    }
+
+    #icon {
+        display: none;
+    }
+
+    #upload-file {
+        width: 98%;
+        height: 100px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px dashed $blue;
+        color: $blue;
+        margin: 30px 0px 10px 0px;
+        cursor: pointer;
+
+        svg {
+            color: $blue;
+            margin: 0px 5px;
+            font-size: $x-large;
+        }
+
+        p {
+            color: $blue;
+            margin: 0px 5px;
+        }
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: $green;
+        color: $font-light;
+        cursor: pointer;
+        margin: 20px 0px;
+    }
+}
+
+.update-skill-form-light {
+    @extend .update-skill-form-darck;
+    background-color: $body-light;
+    box-shadow: 0 0 10px $black;
+    @media (max-width:$phone) {
+        width: 90%;
+    }
+
+    .header {
+        border-color: transparent transparent $font-darck transparent;
+
+        h1 {
+            color: $font-darck;
+        }
+
+    }
+
+    label {
+        color: $font-darck;
+    }
+
+    input {
+        width: 98%;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        padding-left: 10px;
+        outline: none;
+    }
+
+    #icon {
+        display: none;
+    }
+
+    #upload-file {
+        width: 98%;
+        height: 100px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px dashed $blue;
+        color: $blue;
+        margin: 30px 0px 10px 0px;
+        cursor: pointer;
+
+        svg {
+            color: $blue;
+            margin: 0px 5px;
+            font-size: $x-large;
+        }
+
+        p {
+            color: $blue;
+            margin: 0px 5px;
+        }
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: $green;
+        color: $font-light;
+        cursor: pointer;
+        margin: 20px 0px;
+    }
+}

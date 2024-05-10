@@ -1,0 +1,70 @@
+.delete-skill-form-darck {
+    width: 50%;
+    height: auto;
+    position: fixed;
+    top: 40%;
+    background-color: $body-darck;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    transition-duration: 0.5s;
+
+    @media  (max-width : $phone) {
+        width: 90%;
+    }
+
+    .header {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid;
+        border-color: transparent transparent $body-light transparent;
+
+        h1 {
+            color: $font-light;
+        }
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        color: $font-light;
+        margin: 20px 0px;
+        cursor: pointer;
+    }
+
+    .delete {
+        background-color: $green;
+    }
+
+    .cancel {
+        background-color: $red;
+    }
+}
+
+.delete-skill-form-light {
+    @extend .delete-skill-form-darck ;
+    background-color: $body-light;
+
+    .header {
+        border-color: transparent transparent $body-darck transparent;
+
+        h1 {
+            color: $font-darck;
+        }
+    }
+
+    .delete {
+        background-color: $green;
+    }
+
+    .cancel {
+        background-color: $red;
+    }
+}

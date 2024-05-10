@@ -1,0 +1,22 @@
+#dash-darck-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    background-color: $body-darck;
+    position: relative;
+}
+
+#dash-light-page {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    background-color: $body-light;
+}

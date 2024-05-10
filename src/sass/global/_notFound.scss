@@ -1,0 +1,79 @@
+.not-found-darck {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $body-darck;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+
+    .cont {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: $body-darck;
+        padding: 0px 20px;
+        transition-duration: 0.5s;
+
+        @media (max-width:$phone) {
+            width: 90%;
+        }
+
+        img {
+            width: auto;
+            height: 100px;
+            color: $blue;
+            margin: 20px 0px;
+            user-select: none;
+        }
+
+        h1 {
+            width: 100%;
+            height: auto;
+            color: $font-light;
+            margin: 5px 0px;
+        }
+
+        h3 {
+            width: 100%;
+            color: $font-light;
+            margin: 5px 0px;
+            padding: 5px 0px;
+            border: 1px solid;
+            border-color: transparent transparent $body-light transparent;
+        }
+
+        a {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: $font-light;
+            background-color: $blue;
+            cursor: pointer;
+            margin: 20px 0px;
+            text-decoration: none
+        }
+    }
+}
+
+.not-found-light {
+    @extend .not-found-darck;
+    background-color: $body-light;
+
+    .cont {
+        background-color: $body-light;
+
+        h1 {
+            color: $font-darck;
+        }
+        
+        h3 {
+            color: $font-darck;
+            border-color: transparent transparent $body-darck transparent;
+        }
+
+    }
+}

@@ -1,0 +1,78 @@
+#error-form-darck {
+    width: 50%;
+    height: 40%;
+    border-radius: 10px;
+    background-color: $message-darck;
+    position: fixed;
+    z-index: 200;
+    top: 20%;
+    left: 25%;
+    overflow: hidden;
+    .header {
+        width: 100%;
+        padding: 5px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid ;
+        border-color: transparent transparent $body-light transparent;
+
+        svg {
+            position: absolute;
+            left: 5%;
+            font-size: $close-icon;
+            color: $blue;
+            transition-duration: 0.5s;
+        }
+
+        svg:hover {
+            transform: rotate(360deg);
+            cursor: pointer;
+        }
+
+        h1 {
+            color: $font-light;
+        }
+    }
+
+    h2 {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $font-light;
+        padding: 0px 10px;
+    }
+    @media (max-width:$phone) {
+        width: 80%;
+        left: 10%;
+    }
+}
+
+
+#error-form-light {
+    @extend #error-form-darck;
+    background-color: $message-light;
+    .header {
+        border-color: transparent transparent $body-darck transparent;
+
+        h1 {
+            color: $font-darck;
+        }
+    }
+
+    h2 {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $font-darck;
+    }
+    @media (max-width:$phone) {
+        width: 80%;
+        left: 10%;
+    }
+}

@@ -1,0 +1,104 @@
+.skills-page-darck {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $body-darck;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+
+    .loading {
+        position: absolute;
+        top: 10%;
+        left: 43%;
+        @media (min-width : $phone) {
+            left: 48%;
+        }
+    }
+
+    .skills-cont {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+        @media (max-width:$phone) {
+            width: 90%;
+        }
+
+        .message {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $font-light;
+            transition-duration: 0.5s;
+            h2 {
+                padding: 5px 20px;
+                background-color: $message-darck;
+                border-radius: 10px;
+            }
+        }
+
+        .skill {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 10px;
+            position: relative;
+
+            img {
+                width: 80%;
+                height: 80%;
+                user-select: none;
+            }
+    
+            h2 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $font-light;
+            }
+        }
+    }
+}
+
+.skills-page-light {
+    @extend .skills-page-darck;
+    background-color: $body-light;
+
+    .skills-cont {
+
+        .message {
+            color: $font-darck;
+            h2 {
+                background-color: $message-light;
+            }
+        }
+
+        .skill {
+    
+            img {
+                width: 80%;
+                height: 80%;
+                user-select: none;
+            }
+    
+            h2 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $font-darck;
+            }
+        }
+    }
+}

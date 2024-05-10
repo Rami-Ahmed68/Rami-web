@@ -1,0 +1,117 @@
+.about-page-darck {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $body-darck;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    
+    .up-account-cont {
+        position: relative;
+        background-color: $body-darck;
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px $black;
+        transition-duration: 0.5s;
+        padding-top: 10px;
+
+        @media (max-width:$phone) {
+            width: 90%;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+
+            h1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                color: $font-light;
+            }
+
+            .loading {
+                width: 35px;
+                height: 35px;
+                top: -1%;
+            }
+        }
+        label {
+            width: 90%;
+            color: $font-light;
+            margin: 5px 0px;
+        }
+
+        input {
+            width: 90%;
+            border: none;
+            outline: none;
+            padding-left: 10px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        .password {
+            width: 90%;
+            background-color: $font-light;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            input {
+                border-radius: 0px;
+            }
+            svg {
+                position: absolute;
+                right: 2%;
+                top: 30%;
+                transition-duration: 0.5s;
+                cursor: pointer;
+            }
+
+            svg:hover {
+                color: $blue;
+            }
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: $green;
+            color: $font-light;
+            cursor: pointer;
+            margin: 20px 0px;
+        }
+    }
+}
+
+.about-page-light {
+    @extend .about-page-darck;
+    background-color: $body-light;
+
+    .up-account-cont {
+        background-color: $body-light;
+
+        .header {
+
+            h1 {
+                color: $font-darck;
+            }
+        }
+        label {
+            color: $font-darck;
+        }
+
+    }
+}

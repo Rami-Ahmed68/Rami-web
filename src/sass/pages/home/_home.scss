@@ -1,0 +1,332 @@
+.home-page-darck {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $body-darck;
+    transition-duration: 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .loading {
+        position: absolute;
+        top: 20%;
+        left: 44%;
+        @media (min-width:$phone) {
+            left: 47%;
+        }
+    }
+
+    .home-cont {
+        width: 40%;
+        height: auto;
+        padding: 0px 10px;
+        margin-top: 80px;
+        padding: 20px 5px ;
+        @media (max-width : $phone) {
+            width: 90%;
+        }
+        @media (min-width : $phone) and (max-width:$tablet) {
+            width: 70%;
+        }
+
+        .message {
+            transition-duration: 0.5s;
+            padding: 10px 5px;
+            border-radius: 5px;
+            background-color: $message-darck;
+            color: $font-light;
+            box-shadow: 0 0 5px $black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width:$phone) {
+                font-size: $medium;
+            }
+        }
+
+        .header {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0px;
+            @media (min-width:$phone) {
+                padding-right: 30px;
+            }
+            .mes {
+                width: 70%;
+                height: auto;
+                h1 {
+                    width: 100%;
+                    margin: none;
+                    font-size: $x4-large;
+                    color: $font-light;
+                    @media (max-width:$phone) {
+                        font-size: $x3-large;
+                    }
+                }
+                h3 {
+                    width: 100%;
+                    font-size: $large;
+                    color: $font-light;
+                    @media (max-width:$phone) {
+                        font-size: $medium;
+                    }
+                    // background-color: green;
+                }
+            }
+            img{
+                // width: 150px;
+                // height: 150px;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 5px solid $blue;
+                user-select: none;
+                @media (max-width:$phone) {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+
+        .work {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0px;
+
+            .title {
+                color: $font-light;
+                text-decoration: underline;
+                font-size: $x-large;
+            }
+
+            p {
+                color: $font-light;
+                width: 95%;
+                margin-left: 5%;
+                font-size: $medium;
+            }
+        }
+
+        .bio {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0px;
+            color: $font-light;
+
+            h1 {
+                text-decoration: underline;
+                font-size: $x-large;
+            }
+
+            p {
+                width: 95%;
+                margin-left: 5%;
+            }
+        }
+
+        .links {
+            margin: 20px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            .scoial {
+                width: 100%;
+                h1 {
+                    color: $font-light;
+                    text-decoration: underline;
+                    font-size: $x-large;
+                }
+                p {
+                    display: flex;
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 5px;
+                        color: $blue;
+                        text-decoration: none;
+                        color: $blue;
+                        cursor: pointer;
+                        margin-left: 5%;
+                        @media (max-width:$phone) {
+                            margin-left: 10px;
+                        }
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            margin: 5px ;
+                        }
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+    
+                }
+
+            }
+        }
+
+        .love {
+            width: 100%;
+            height: auto;
+            color: $font-light;
+            margin: 20px 0px;
+
+            h1 {
+                text-decoration: underline;
+                font-size: $x-large;
+            }
+
+            p {
+                width: 95%;
+                margin-left: 5%;
+            }
+        }
+
+        .github {
+            width: 100%;
+            margin: 20px 0px;
+            h1 {
+                color: $font-light;
+                text-decoration: underline;
+                font-size: $x-large;
+            }
+            a {
+                width: 30%;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                padding: 10px 0px;
+                color: $blue;
+                text-decoration: none;
+                color: $blue;
+                cursor: pointer;
+                margin-left: 5%;
+                @media (max-width:$phone) {
+                    margin-left: 10px;
+                }
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin: 5px ;
+                }
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .problem {
+            width: 100%;
+            margin: 20px 0px;
+            h1 {
+                color: $font-light;
+                text-decoration: underline;
+                font-size: $x-large;
+            }
+            a {
+                width: 30%;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                padding: 10px 0px;
+                color: $blue;
+                text-decoration: none;
+                color: $blue;
+                cursor: pointer;
+                margin-left: 5%;
+                @media (max-width:$phone) {
+                    margin-left: 10px;
+                }
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin: 5px ;
+                }
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .addres {
+            width: 300px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $blue;
+            color: $font-light;
+            margin: 30px auto;
+        }
+    }
+}
+
+.home-page-light {
+    @extend .home-page-darck;
+    background-color: $body-light;
+
+    .home-cont {
+        .message {
+            color: $font-darck;
+            background-color: $message-light;
+        }
+
+        .header {
+            .mes {
+                h1 {
+                    color: $font-darck;
+                }
+                h3 {
+                    color: $font-darck;
+                }
+            }
+        }
+
+        .work {
+            .title {
+                color: $font-darck;
+            }
+
+            p {
+                color: $font-darck;
+            }
+        }
+
+        .bio {
+            color: $font-darck;
+        }
+
+        .links {
+            .scoial {
+                h1 {
+                    color: $font-darck;
+                }
+            }
+        }
+
+        .love {
+            color: $font-darck;
+        }
+
+        .github {
+            h1 {
+                color: $font-darck;
+                text-decoration: underline;
+            }
+        }
+
+        .problem {
+            width: 100%;
+            h1 {
+                color: $font-darck;
+            }
+        }
+    }
+}

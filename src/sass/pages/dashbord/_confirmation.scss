@@ -1,0 +1,75 @@
+.confirmation-darck {
+    width: 50%;
+    height: auto;
+    background-color: $body-darck;
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $black;
+    overflow: hidden;
+    display: flex;
+    z-index: 40;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    transition-duration: 0.5s;
+
+    @media (max-width:$phone) {
+        width: 90%;
+        left: 5%;
+    }
+
+    .header {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid;
+        border-color: transparent transparent $body-light transparent;
+        h1 {
+            color: $font-light;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: $font-light;
+        border: none;
+        cursor: pointer;
+        margin: 20px 0px;
+    }
+
+
+    .delete {
+        background-color: $green;
+    }
+
+    .cancel {
+        background-color: red;
+    }
+}
+
+
+
+.confirmation-light {
+    @extend .confirmation-darck;
+    background-color: $message_light;
+    @media (max-width:$phone) {
+        width: 90%;
+        left: 5%;
+    }
+
+    .header {
+        border-color: transparent transparent $body-darck transparent;
+        h1 {
+            color: $font-darck;
+        }
+    }
+}
+

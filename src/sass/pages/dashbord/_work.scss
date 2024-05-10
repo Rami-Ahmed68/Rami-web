@@ -1,0 +1,118 @@
+.create-work-darck {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0% 20px 0%;
+
+    @media (max-width: $phone) {
+        width: 90%;
+    }
+
+    .title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $font-light;
+        margin: 20px 0px;
+    }
+
+    .create-work {
+        width: 30%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        color: $font-light;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-left: 35%;
+        background-color: $body-darck;
+        transition-duration: 0.5s;
+        @media (max-width : $phone) {
+            width: 50%;
+            margin-left: 25%;
+        }
+
+        svg {
+            margin: 0px 5px 0px 0px;
+            font-size: $large;
+        }
+
+        p {
+            font-size: $large;
+        }
+    }
+
+    .create-work:hover{
+        background-color: $message-darck;
+    }
+
+    .work {
+        width: 45%;
+        height: 300px;
+        overflow:hidden;
+        margin: 20px 0px;
+        position: relative;
+        a {
+            text-decoration: none;
+        }
+        @media (max-width: $phone) {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 70%;
+            border-radius: 10px;
+            user-select: none;
+        }
+
+        h1 {
+            width: 100%;
+            height: auto;
+            color: $font-light;
+            text-align: center;
+        }
+
+        p {
+            width: 100%;
+            height: auto;
+            padding:5px;
+            color: $font-light;
+            text-align: center;
+        }
+    }
+}
+
+.create-work-light {
+    @extend .create-work-darck;
+    @media (max-width: $phone) {
+        width: 90%;
+    }
+
+    .title {
+        color: $font-darck;
+    }
+
+    .create-work {
+        color: $font-darck;
+        background-color: $body_light;
+    }
+
+    .create-work:hover {
+        background-color: $message_light;
+    }
+    
+    .work {
+        h1 {
+            color: $font-darck;
+        }
+
+        p {
+            color: $font-darck;
+        }
+    }
+}

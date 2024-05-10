@@ -1,0 +1,112 @@
+.login-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+
+    .log-out-btn {
+        padding: 20px 40px;
+        border: none;
+        border-radius: 5px;
+        background-color: $red;
+        color: $font-light;
+        cursor: pointer;
+    }
+
+    .log-form {
+        width: 50%;
+        height: 70%;
+        margin: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        // margin-top: 15%;
+        border-radius: 10px;
+        box-shadow:  0 0 10px $black;
+        padding: 20px 0px;
+        position: relative;
+        @media (max-width: $phone) {
+            width: 90%;
+        }
+    
+        h1 {
+            color: $font-light;
+        }
+
+        label {
+            width: 90%;
+            margin: 1% 5%;
+            height: auto;
+            color: $font-light;
+        }
+    
+        input {
+            width: 90%;
+            height: 40px;
+            margin: 1% 5%;
+            border-radius: 10px;
+            padding-left: 10px;
+            border: none;
+            outline: none;
+        }
+
+        .pass {
+            width: 90%;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $font-light;
+            border-radius: 10px;
+            padding: 0px 5px 0px 0px;
+            overflow: hidden;
+
+            input  {
+                width: 95%;
+                margin: 0%;
+                border-radius: 0px;
+            }
+
+            svg {
+                cursor: pointer;
+                transition-duration: 0.5s;
+            }
+
+            svg:hover {
+                color: $blue;
+            }
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            color: $body-light;
+            background-color: $green;
+            cursor: pointer;
+            margin: 20px 10px 10px 10px;
+        }
+
+    }
+}
+
+#light-page {
+    background-color: $body-light;
+    .log-form {
+        label {
+            color: $font-darck;
+        }
+        h1 {
+            color: $font-darck;
+        }
+    }
+}
+
+#darck-page {
+    background-color: $body-darck;
+}

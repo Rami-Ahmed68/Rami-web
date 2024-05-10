@@ -1,0 +1,115 @@
+.create-skill-darck {
+    width: 50%;
+    height: auto;
+    background-color: $body-darck;
+    box-shadow: 0 0 10px $black;
+    position: fixed;
+    top: 40%;
+    z-index: 50;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:$phone) {
+        width: 90%;
+    }
+
+    .header {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid;
+        border-color: transparent transparent $body-light transparent;
+
+        svg {
+            position: absolute;
+            left: 5%;
+            font-size: $x-large;
+            cursor: pointer;
+            color: $blue;
+            transition-duration: 0.5s;
+        }
+
+        svg:hover {
+            transform: rotate(360deg);
+        }
+
+        h1 {
+            color: $font-light;
+        }
+    }
+
+    label {
+        color: $font-light;
+        width: 90%;
+        margin: 10px 0px;
+    }
+
+    input {
+        width: 90%;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        padding-left: 10px;
+    }
+
+    #icon {
+        display: none;
+    }
+
+    #upload-file {
+        width: 90%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        border: 3px dashed $blue;
+        margin: 30px 0px;
+        color: $blue;
+        cursor: pointer;
+        svg {
+            font-size: $x-large;
+            margin: 0px 5px;
+        }
+        p {
+            margin: 0px 5px;
+        }
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        color: $font-light;
+        background-color: $green;
+        cursor: pointer;
+        margin: 10px 0px;
+    }
+}
+
+.create-skill-light {
+    @extend .create-skill-darck;
+    background-color: $body-light;
+
+    .header {
+        border-color: transparent transparent $body-darck transparent;
+
+        h1 {
+            color: $font-darck;
+        }
+    }
+
+    label {
+        color: $font-darck;
+    }
+
+    button {
+        color: $font-light;
+    }
+}

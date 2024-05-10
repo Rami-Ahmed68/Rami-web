@@ -1,5 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '../views/HomeView.vue';
+import UpdateAccountViewvue from "../views/UpdateAccountView.vue";
+import LoginViewvue from "../views/LoginView.vue";
+import DashBordViewvue from "../views/DashBordView.vue";
+import ShowWorkView from "../views/ShowWorkView.vue";
+import WorksViewvue from "../views/WorksView.vue";
+import SkillsViewvue from "../views/SkillsView.vue";
+import NotFound from "../views/NotFound.vue";
 
 const routes = [
   {
@@ -8,12 +15,39 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/upaccount',
+    name: 'upaccount',
+    component : UpdateAccountViewvue
+  },
+  {
+    path : "/login",
+    name : "login",
+    component : LoginViewvue,
+  },
+  {
+    path : "/dash",
+    name : "dash",
+    component : DashBordViewvue
+  },
+  {
+    path : "/work/:id",
+    name : "work",
+    component : ShowWorkView
+  },
+  {
+    path : "/works",
+    name : "works",
+    component : WorksViewvue
+  },
+  {
+    path : "/skills",
+    name : "skills",
+    component : SkillsViewvue
+  },
+  {
+    path : "/:pathMatch(.*)*",
+    name : "NotFound",
+    component : NotFound
   }
 ]
 

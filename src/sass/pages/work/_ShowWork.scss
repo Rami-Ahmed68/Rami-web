@@ -1,0 +1,219 @@
+.work-page-darck {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $body-darck;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition-duration: 0.5s;
+
+    @media (min-width : $phone) {
+        padding-top: 70px;
+    }
+    .loading {
+        position: absolute;
+        top: 20%;
+        left: 47%;
+        @media (max-width : $phone) {
+            left: 43% ; 
+        }
+    }
+
+    .work {
+        width: 50%;
+        height: auto;
+        overflow: hidden;
+        padding: 10px;
+
+        @media (max-width:$phone) {
+            width: 90%;
+            margin-top: 20%;
+        }
+
+        // cover image
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .header {
+            width: 100%;
+            padding: 10px 0px;
+            margin: 20px 0px;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: center;
+            color: $font-light;
+            a {
+                font-size: $x-large;
+                text-decoration: none;
+                color: $blue;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            svg {
+                margin: 0px 10px;
+            }
+            h2 {
+                margin: 3px 10px 3px 0px;
+            }
+            p {
+                width: auto;
+                height: auto;
+                margin: 10px 0px;
+                padding: 4px;
+                font-size: $small;
+                background-color: $message-darck;
+                border-radius: 5px;
+                color: $font-light;
+            }
+        }
+
+        .description {
+            width: 100%;
+            color: $font-light;
+            span {
+                border-radius: 5px;
+                padding: 5px;
+                background-color: $message-darck;
+            }
+            p {
+                width: 98%;
+                height: auto;
+                margin: 20px 0% 10px 2%;
+            }
+        }
+
+        .front-end {
+            width: 100%;
+            height: auto;
+            margin: 30px 0px;
+            color: $font-light;
+            display: flex;
+            align-items: start;
+            span {
+                padding: 5px;
+                border-radius: 5px;
+                background-color: $message-darck;
+            }
+
+            p {
+                width: 70%;
+                height: auto;
+                margin-left: 10px;
+                margin-top: 5px;;
+            }
+        }
+
+        .back-end {
+            @extend .front-end;
+        }
+
+        .link {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: 10px 0px;
+
+            span {
+                padding: 5px;
+                border-radius: 5px;
+                color: $font-light;
+                background-color: $message-darck;
+            }
+
+            a {
+                margin-left: 20px;
+                text-decoration: none;
+                color: $blue;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .type {
+            @extend .link;
+            p {
+                width: 70%;
+                height: auto;
+                margin-left: 10px;
+                color: $font-light;
+            }
+        }
+
+        h3 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $font-light;
+            opacity: 0.5;
+            margin: 40px 0px;
+        }
+
+        .images-cont {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            img {
+                width: 100%;
+                height: auto;
+                margin: 5px 0px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.work-page-light {
+    @extend .work-page-darck;
+    background-color: $body-light;
+
+    .work {
+
+        .header {
+            color: $font-darck;
+            p {
+                background-color: $message-light;
+                color: $font-darck;
+            }
+        }
+
+        .description {
+            color: $font-darck;
+            span {
+                background-color: $message-light;
+            }
+        }
+
+        .front-end {
+            color: $font-darck;
+            span {
+                background-color: $message-light;
+            }
+        }
+
+        .back-end {
+            @extend .front-end;
+        }
+
+        .link {
+
+            span {
+                color: $font-darck;
+                background-color: $message-light;
+            }
+        }
+        h3 {
+            color: $font-darck;
+            opacity: 0.5
+        }
+    }
+}

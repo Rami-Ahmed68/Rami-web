@@ -1,0 +1,37 @@
+
+@import "./variables";
+@import "./pages/login/login";
+@import "./global/nav";
+@import "./global/loading";
+@import "./global/Error";
+@import "./pages/dashbord/Info";
+@import "./pages/dashbord/dash";
+@import "./pages/dashbord/work";
+@import "./pages/dashbord/createWork";
+@import "./pages/dashbord/updateInfo";
+@import "./pages/dashbord/optios";
+@import "./pages/dashbord/confirmation";
+@import "./pages/component/skill";
+@import "./pages/component/updateSkillForm";
+@import "./pages/component/deleteSkillConfirmation";
+@import "./pages/component/createSkillForm";
+@import "./pages/work/ShowWork";
+@import "./pages/work/WorksPage";
+@import "./pages/skills/skills";
+@import "./pages/home/home";
+@import "./pages/updateAccount/upAccount";
+@import "./global/notFound";
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;400;700;900&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}

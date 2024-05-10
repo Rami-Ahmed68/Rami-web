@@ -1,0 +1,279 @@
+// darck mood 
+#dash-darck-page{
+    .create-work-form {
+        width: 60%;
+        max-height: 80%;
+        background: $body-darck;
+        margin: 100px 0% 20px 0%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px $black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: -5%;
+        left: 20%;
+        z-index: 100;
+        padding: 10px 0px;
+        overflow-y: scroll;
+
+        @media (max-width : $phone) {
+            width: 90%;
+            top: 0%;
+            left: 5%;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border: 1px solid;
+            border-color: transparent transparent $body-light transparent;
+
+            // close svg icon style
+            svg {
+                position: absolute;
+                left: 5%;
+                top: 20%;
+                font-size: $x-large;
+                color: $blue;
+                transition-duration: 0.5s;
+                cursor: pointer;
+                transition-duration: 0.5s;
+            }
+
+            // svg hove effect
+            svg:hover {
+                transform: rotate(360deg);
+            }
+
+            h2 {
+                color: $font-light;
+            }
+
+            .loading {
+                position: absolute;
+                right: 2%;
+                top: -25%;
+            }
+        }
+    
+        label {
+            width: 90%;
+            height: 20px;
+            color: $font-light;
+        }
+    
+        input {
+            width: 90%;
+            height: 40px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            padding-left: 10px;
+            margin: 10px 0px;
+        }
+
+        .radio {
+            width: 50%;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            input {
+                width: 20px;
+                height: 20px;
+                margin: 0px 10px;
+            }
+        }
+
+        .work-images {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #images {
+            display: none;
+        }
+    
+        .select-images {
+            margin: 20px 0px;
+            width: 90%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 3px dashed $blue;
+    
+            svg {
+                color: $blue;
+                margin: 0px 5px;
+                font-size: $x-large;
+            }
+    
+            p {
+                color: $blue;
+                margin: 0px 5px;
+            }
+        }
+    
+        button {
+            padding: 10px 20px;
+            background-color: $green;
+            border: none;
+            color: $font-light;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    }
+
+    .create-work-form::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .create-work-form::-webkit-scrollbar-track {
+        background: $message_darck;
+    }
+
+    .create-work-form::-webkit-scrollbar-thumb {
+        background-color: $blue;
+        border-radius: 20px;  
+    }
+}
+
+// light mood 
+#dash-light-page{
+    .create-work-form {
+        background: $body-light;
+
+        @media (max-width : $phone) {
+            width: 90%;
+            top: 0%;
+            left: 5%;
+        }
+
+        .header {
+            border-color: transparent transparent $body-darck transparent;
+
+            // close svg icon style
+            svg {
+                position: absolute;
+                left: 5%;
+                top: 20%;
+                font-size: $x-large;
+                color: $blue;
+                transition-duration: 0.5s;
+                cursor: pointer;
+                transition-duration: 0.5s;
+            }
+
+            // svg hove effect
+            svg:hover {
+                transform: rotate(360deg);
+            }
+
+            h2 {
+                color: $font-darck;
+            }
+
+            .loading {
+                position: absolute;
+                right: 2%;
+                top: -25%;
+            }
+        }
+
+        label {
+            width: 90%;
+            height: 20px;
+            color: $font-darck;
+        }
+        
+
+        .select-images {
+            margin: 20px 0px;
+            width: 90%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 3px dashed $blue;
+        }
+
+    }
+
+    .create-work-form::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .create-work-form::-webkit-scrollbar-track {
+        background: $message_light;
+    }
+
+    .create-work-form::-webkit-scrollbar-thumb {
+        background-color: $blue;
+        border-radius: 20px;  
+    }
+
+
+
+
+
+
+
+    // .create-work-form {
+    //     @extend #dash-darck-page ;
+    //     background: $body-light;
+    //     overflow-y: scroll;
+    //     height: 50%;
+    //     @media (max-width : $phone) {
+    //         width: 90%;
+    //         background-color: red;
+    //         height: 10%;
+    //         top: -10%;
+    //         left: 5%;
+    //     }
+    //     .header {
+    //         border-color: transparent transparent $body-darck transparent;
+    
+    //         svg {
+    //             color: $blue;
+    //         }
+    
+    //         h2 {
+    //             color: $font-darck;
+    //         }
+    //     }
+
+    //     label {
+    //         color: $font-darck;
+    //     }
+    // }
+
+    // .create-work-form::-webkit-scrollbar {
+    //     width: 5px;
+    // }
+
+    // .create-work-form::-webkit-scrollbar-track {
+    //     background: $message_darck;
+    // }
+
+    // .create-work-form::-webkit-scrollbar-thumb {
+    //     background-color: $blue;
+    //     border-radius: 20px;  
+    // }
+
+}
