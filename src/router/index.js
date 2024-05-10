@@ -9,7 +9,7 @@ import SkillsViewvue from "../views/SkillsView.vue";
 import NotFound from "../views/NotFound.vue";
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   mode : "history",
   routes : [
     {
