@@ -1,6 +1,4 @@
-// import { createRouter, createWebHistory } from 'vue-router';
-import Vue from "vue";
-import Router from "vue-router";
+import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import UpdateAccountViewvue from "../views/UpdateAccountView.vue";
 import LoginViewvue from "../views/LoginView.vue";
@@ -10,10 +8,8 @@ import WorksViewvue from "../views/WorksView.vue";
 import SkillsViewvue from "../views/SkillsView.vue";
 import NotFound from "../views/NotFound.vue";
 
-Vue.use(Router)
-
-const router = new Router({
-  // history: createWebHistory(),
+const router = createRouter({
+  history: createWebHistory(),
   mode : "history",
   routes : [
     {
