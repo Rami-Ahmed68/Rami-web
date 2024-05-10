@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import UpdateAccountViewvue from "../views/UpdateAccountView.vue";
 import LoginViewvue from "../views/LoginView.vue";
@@ -7,6 +7,8 @@ import ShowWorkView from "../views/ShowWorkView.vue";
 import WorksViewvue from "../views/WorksView.vue";
 import SkillsViewvue from "../views/SkillsView.vue";
 import NotFound from "../views/NotFound.vue";
+
+// Vue.use(VueRouter);
 
 const routes = [
   {
@@ -53,7 +55,8 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  mode : "history"
 })
 
 export default router
