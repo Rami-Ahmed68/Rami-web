@@ -211,6 +211,11 @@
                 background-color: $message-light;
             }
         }
+        .type {
+            p {
+                color: $font-darck;
+            }
+        }
         h3 {
             color: $font-darck;
             opacity: 0.5
