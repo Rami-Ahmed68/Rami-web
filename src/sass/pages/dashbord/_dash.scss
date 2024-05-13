@@ -8,6 +8,10 @@
     transition-duration: 0.5s;
     background-color: $body-darck;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #dash-light-page {
