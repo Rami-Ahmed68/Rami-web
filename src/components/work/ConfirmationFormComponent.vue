@@ -19,10 +19,8 @@ export default {
     },
     methods : {
         async DeleteWork() {
-            console.log("request sende ...");
             // to start the loading animation
             this.$store.state.DataLoaded = true;
-            console.log(this.$store.state.adminInfo.admin._id)
 
             // craete headers to send it in request
             const headers = {
@@ -54,6 +52,7 @@ export default {
                 }).catch((error) => {
                     // to start the loading animation
                     this.$store.state.DataLoaded = false;
+                    console.log(error);
 
                     // to open the error from
                     this.$store.state.errorMessage = error.response.data.message;

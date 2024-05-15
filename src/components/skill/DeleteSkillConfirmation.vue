@@ -37,20 +37,19 @@ export default {
             // send the request
             try {
                 await axios.delete(this.$store.state.DeleteSkillAPI , { data , headers })
-                .then((response) => {
+                .then(() => {
                     // to update all geted skills
                     this.$store.dispatch("GetSkills");
 
-                    // to start the loading animation
-                    this.$store.state.DataLoadec = false;
+                    // to stope the loading animation
+                    this.$store.state.DataLoaded = false;
 
                     // to close the delete skill form 
                     this.$store.state.deleteSkillForm = false;
 
-                    console.log(response)
                 }).catch((error) => {
                     // to start the loading animation
-                    this.$store.state.DataLoadec = false;
+                    this.$store.state.DataLoaded = false;
 
                     // to open the error form
                     this.$store.state.errorMessage = error.response.data.message;
@@ -59,8 +58,8 @@ export default {
                     this.$store.state.deleteSkillForm = false;
                 })
             } catch (error) {
-                // to start the loading animation
-                this.$store.state.DataLoadec = false;
+                // to stope the loading animation
+                this.$store.state.DataLoaded = false;
 
                 // to open the error form
                 this.$store.state.errorMessage = error.response.data.message;

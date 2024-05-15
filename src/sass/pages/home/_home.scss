@@ -9,9 +9,9 @@
     .loading {
         position: absolute;
         top: 20%;
-        left: 44%;
-        @media (min-width:$phone) {
-            left: 47%;
+        left: 48%;
+        @media (max-width:$phone) {
+            left: 44%;
         }
     }
 

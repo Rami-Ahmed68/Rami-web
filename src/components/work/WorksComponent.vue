@@ -7,7 +7,7 @@
                 <p>create work</p>
             </div>
 
-        <loadingAnimationVue />
+            <loadingAnimationVue />
 
             <div class="work" v-for="(work , index) in this.$store.state.works" :key="index" :id="work._id">
                 <WorkOptionsComponentVue @click="setWorkData(work)" v-if="this.$store.state.adminInfo"/>
