@@ -19,7 +19,7 @@
 
       <div class="bio">
         <h1>Bio</h1>
-        <p>{{ this.$store.state.info.bio[0] }}</p>
+        <p v-for="(line , index) in this.$store.state.info.bio[0].split('.')" :key="index">{{ line }}.</p>
       </div>
 
       <div class="love">
@@ -33,13 +33,19 @@
             <p>          
               <a :href="`${this.$store.state.instagram}`" target="_blacnk">
               <img src="../assets/instagram2.png" alt="">
-              @ramiahmet68
+              @ramiahmed.68
             </a>
           </p>
           <p>
             <a :href="`${this.$store.state.discord}`" target="_blacnk">
               <img src="../assets/discord.png" alt="">
-              @ramiahmet68
+              @ramiahmed.68
+            </a>
+          </p>
+          <p>
+            <a :href="`${this.$store.state.linkedin}`" target="_blacnk">
+              <img src="../assets/linkedin.png" alt="">
+              @ramiahmed
             </a>
           </p>
         </div>
@@ -49,7 +55,7 @@
         <h1>GitHub</h1>
         <a :href="`${this.$store.state.github}`" target="_blacnk">
           <img src="../assets/github.png" alt="">
-          @ramiahmet68
+          @ramiahmed.68
         </a>
       </div>
 
@@ -57,7 +63,7 @@
         <h1>Problem Solving</h1>
         <a :href="`${this.$store.state.codewars}`" target="_blanck">
           <img src="../assets/codewars.png" alt="">
-          ramiahmet
+          @ramiahmed.68
         </a>
       </div>
 
