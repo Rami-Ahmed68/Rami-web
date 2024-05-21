@@ -14,7 +14,7 @@
                 <router-link :to="`/work/${work._id}`">
                     <img :src="work.images[0]" alt="image">
                     <h1>{{ work.title }}</h1>
-                    <p>{{ work.description.slice(0 , 70) }} <span v-if="work.description.length > 70">...</span></p>
+                    <p>{{ work.description.slice(0 , 30) }} <span v-if="work.description.length > 30">...</span></p>
                 </router-link>
             </div>
     </div>
