@@ -113,7 +113,7 @@ nav {
             align-items: center;
             border-radius: 5px;
             cursor: pointer;
-            border: 0.3px solid $message-light;
+            border: 1px solid $message-light;
             svg {
                 color: $font-darck;
                 font-size: x-large;
@@ -206,7 +206,7 @@ nav {
     
             .bars {
                 background-color: $message-darck;
-                border: 0.3px solid $message-darck;
+                border: 1px solid $message-darck;
                 svg {
                     color: $font-light;
                 }
