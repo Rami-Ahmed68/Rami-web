@@ -7,7 +7,6 @@ nav {
     top: 0%;
     z-index: 100;
     transition-duration: 0.5s;
-    background-color: $blue;
 
         // mood cont style
         #darck {
@@ -40,6 +39,7 @@ nav {
         width: 80%;
         height: 100%;
         background-color: $nav-light;
+            background-color: $blue;
         display: flex;
         justify-content: space-between;
         align-items: center;
