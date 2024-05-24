@@ -8,8 +8,8 @@ nav {
     z-index: 100;
     transition-duration: 0.5s;
 
-        // mood cont style
-        #darck {
+    // mood cont style
+    #darck {
             width: 40px;
             height: 40px;
             border-radius: 5px;
@@ -25,14 +25,14 @@ nav {
                 position: absolute;
                 right: 20%;
             }
-        }
+    }
 
-        #light {
+    #light {
             @extend #darck;
             background-color: $blue;
             border-radius: 50%;
             transform: rotate(360deg);
-        }
+    }
 
     // light nav style
     #nav-light {
@@ -107,7 +107,7 @@ nav {
             height: 40px;
             position: absolute;
             right: 5%;
-            background-color: $body-darck;
+            background-color: $body-light;
             display: none;
             justify-content: center;
             align-items: center;
@@ -183,8 +183,8 @@ nav {
         }
     }
 
-        // darck nav style
-        #nav-darck {
+    // darck nav style
+    #nav-darck {
             @extend  #nav-light;
             background-color: $message-darck;
             // links list
@@ -214,17 +214,19 @@ nav {
             }
             
             .close-box {
-                    border-raduis : 10px;
-                    overflow: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                
+    
                 ul {
                     background-color: $message-darck;
-                    border : 1px solid $body-light;
     
                     li {
                         a {
-                            text-decoration: none;
-                            transition-duration: 0.5s;
                             color: $font-light;
+                        }
+                        .router-link-active {
+                            color: $blue;
                         }
                     }
             
@@ -238,7 +240,12 @@ nav {
                     }
                 }
             }
-        }
+
+            .open-box {
+                @extend .close-box;
+                border: 1px solid $body-light;
+            }
+    }
     
 }
 
