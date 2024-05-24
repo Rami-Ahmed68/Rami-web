@@ -39,7 +39,6 @@ nav {
         width: 80%;
         height: 100%;
         background-color: $nav-light;
-            background-color: $blue;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -108,13 +107,13 @@ nav {
             height: 40px;
             position: absolute;
             right: 5%;
-            background-color: $message-light;
+            background-color: $body-darck;
             display: none;
             justify-content: center;
             align-items: center;
             border-radius: 5px;
             cursor: pointer;
-            border: 1px solid $message-light;
+            border: 1px solid $body-darck;
             svg {
                 color: $font-darck;
                 font-size: x-large;
@@ -206,8 +205,8 @@ nav {
             }
     
             .bars {
-                background-color: $message-darck;
-                border: 1px solid $message-darck;
+                background-color: $body-darck;
+                border: 1px solid $body-light;
                 svg {
                     color: $font-light;
                 }
