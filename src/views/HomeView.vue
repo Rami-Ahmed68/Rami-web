@@ -9,7 +9,7 @@
             <h1>{{ this.$store.state.name }}</h1>
             <h3>{{ this.$store.state.message2 }}</h3>
         </div>
-        <img src="../assets/rami.jpg" alt="">
+        <img src="../assets/profiel-avatar.jpg" alt="">
       </div>
 
       <div class="work">
